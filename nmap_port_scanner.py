@@ -6,7 +6,7 @@ import os
 import re
 
 # Expresión regular para reconocer IPv4 addresses
-ip_add_pattern = re.compile("^(?:[0-9]{1,3}\.){3}[0-9]{1.3}$")
+ip_add_pattern = re.compile("^(?:[0-9]{1,3}\.){3}[0-9]{1,3}$")
 
 # Expresión regular para extraer los puertos que quieres escanear
 port_range_pattern = re.compile("([0-9]+)-([0-9]+)")
@@ -23,7 +23,7 @@ print("\n****************************************************************")
 open_ports = []
 
 while True:
-    ip_add_entered = input("\nPor favor introduce la ip que quieres escanear")
+    ip_add_entered = input("\nPor favor introduce la ip que quieres escanear: ")
     if ip_add_pattern.search(ip_add_entered):
         print(f"{ip_add_entered} es una ip válida")
         break
