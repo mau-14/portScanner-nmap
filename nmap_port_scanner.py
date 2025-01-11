@@ -14,6 +14,10 @@ port_range_pattern = re.compile("([0-9]+)-([0-9]+)")
 port_min = 0
 port_max = 65535
 
+os.system("figlet Mauri")
 
+print("\n****************************************************************")
+print("\n* https://github.com/mau-14                                    *")
+print("\n****************************************************************")
 
 
