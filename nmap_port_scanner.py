@@ -46,7 +46,8 @@ for port in range(port_min, port_max + 1):
     try:
 
         result = nm.scan(ip_add_entered, str(port))
-        print(result)
+        # Este print es para ver lo que devuelve el scan del nmap
+        # print(result)
 
         port_status = (result['scan'][ip_add_entered]['tcp'][port]['state'])
         print(f"Puerto {port} es {port_status}")
